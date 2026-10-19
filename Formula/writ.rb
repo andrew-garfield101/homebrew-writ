@@ -1,26 +1,26 @@
 class Writ < Formula
   desc "AI-native version control for agentic systems"
   homepage "https://github.com/andrew-garfield101/writ"
-  version "0.4.3"
+  version "0.4.4"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/andrew-garfield101/writ/releases/download/v#{version}/writ-aarch64-apple-darwin.tar.gz"
-      sha256 "0b354a22aa34d55426e7625bd2166adb54dd57cfee217f49e6c22c36dc8361db"
+      sha256 "116ffad6ca08db3a646805718badc051074b6bd1ef7d6a310d894e88ecb1bb77"
     else
       url "https://github.com/andrew-garfield101/writ/releases/download/v#{version}/writ-x86_64-apple-darwin.tar.gz"
-      sha256 "1d0e7fa21836df9734cb0131c11c0b37ac50f225eedfd68a2993a8abff158775"
+      sha256 "186effba6292dd4e1987e389ce9808471e4c11b7802765c41a06ffd98138050d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/andrew-garfield101/writ/releases/download/v#{version}/writ-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9e79040582240a14ed15a6a435cd32f0f82cbdd7c7f18564fe75b1e16e45899f"
+      sha256 "4056689a635378dde08cee1eb36376dc204ef369d4a298fa0d1e15acaaf6d08d"
     else
       url "https://github.com/andrew-garfield101/writ/releases/download/v#{version}/writ-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6b4b9697a40883a3a4260f59cf2bc25e5e07b226bc6283d54752d44783ae9e3e"
+      sha256 "192e6ba8031d2fa3ecd5eacf22dbff413230b2f20b08f8cc7b503a5fdfb2702f"
     end
   end
 
